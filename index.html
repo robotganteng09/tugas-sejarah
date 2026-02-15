@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalimantan Utara | Profil Provinsi</title>
+
+    <meta name="description" content="Website profil Provinsi Kalimantan Utara berisi informasi, budaya, dan wisata." />
+    <meta name="author" content="Nama Kamu" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-slate-950 text-white scroll-smooth">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 w-full z-50 bg-slate-900/80 backdrop-blur">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="font-bold text-xl text-emerald-400">Kalimantan Utara</h1>
+            <nav class="hidden md:flex gap-6">
+                <a href="#profil" class="hover:text-emerald-400">Profil</a>
+                <a href="#ibukota" class="hover:text-emerald-400">Ibu Kota</a>
+                <a href="#suku" class="hover:text-emerald-400">Suku</a>
+                <a href="#musik" class="hover:text-emerald-400">Alat Musik</a>
+
+                <a href="#wisata" class="hover:text-emerald-400">Wisata</a>
+                <a href="#makanan" class="hover:text-emerald-400">Makanan</a>
+                
+            </nav>
+            <button id="mobile-menu-btn" class="md:hidden text-2xl">☰</button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 px-6 pb-4">
+            <a href="#profil" class="block py-2">Profil</a>
+            <a href="#ibukota" class="block py-2">Ibu Kota</a>
+            <a href="#suku" class="block py-2">Suku</a>
+            <a href="#musik" class="block py-2">Alat Musik</a>
+
+            <a href="#wisata" class="block py-2">Wisata</a>
+            <a href="#makanan" class="block py-2">Makanan</a>
+
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="pt-32 pb-24">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Provinsi <span class="text-emerald-400">Kalimantan Utara</span>
+                </h2>
+                <p class="text-slate-300">
+                    Provinsi termuda di Indonesia dengan kekayaan alam, budaya, dan wisata tropis.
+                </p>
+            </div>
+
+            <img src="assets/image/map_kalimantanUtara.jpg"
+                class="rounded-2xl shadow-xl animate-float" alt="Hutan Kalimantan" />
+        </div>
+    </section>
+
+    <!-- PROFIL -->
+    <section id="profil" class="py-24 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold mb-6">Profil Provinsi</h3>
+            <p class="text-slate-300 max-w-3xl mx-auto">
+                Kalimantan Utara berdiri tahun 2012 sebagai provinsi ke-34 Indonesia dan berbatasan langsung dengan
+                Malaysia.
+            </p>
+
+            <img src="assets/image/tanjung-selor.jpg" class="rounded-xl mt-10 mx-auto"
+                alt="Peta Kalimantan" />
+        </div>
+    </section>
+
+    <!-- IBU KOTA -->
+<section id="ibukota" class="py-24 bg-slate-900">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+        <div>
+            <h3 class="text-3xl font-bold mb-4">
+                Ibu Kota: <span class="text-emerald-400">Tanjung Selor</span>
+            </h3>
+            <p class="text-slate-300 leading-relaxed">
+                Tanjung Selor merupakan pusat pemerintahan Provinsi Kalimantan Utara
+                sekaligus wilayah bersejarah Kesultanan Bulungan.
+            </p>
+        </div>
+
+        <img src="assets/image/tanjung-selor.jpg" alt="Kota Tanjung Selor"
+            class="w-full h-80 object-cover rounded-2xl shadow-lg" />
+
+    </div>
+</section>
+
+    <!-- SUKU -->
+    <section id="suku" class="py-24 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center mb-10">Suku Bangsa</h3>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-slate-800 rounded-xl overflow-hidden">
+                    <img src="assets/image/suku-dayak.jpg" alt="Suku Dayak">
+                    <div class="p-4">
+                        <h4 class="font-bold text-emerald-400">Suku Dayak</h4>
+                        <p class="text-slate-300 text-sm">Memiliki rumah panjang dan adat kuat.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-xl overflow-hidden">
+                    <img src="assets/image/suku-tidung.jpg" alt="Suku Tidung">
+                    <div class="p-4">
+                        <h4 class="font-bold text-emerald-400">Suku Tidung</h4>
+                        <p class="text-slate-300 text-sm">Budaya Melayu-Islam pesisir.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-xl overflow-hidden">
+                    <img src="assets/image/suku-bulungan.jpg" alt="Budaya Kalimantan">
+                    <div class="p-4">
+                        <h4 class="font-bold text-emerald-400">Suku Bulungan</h4>
+                        <p class="text-slate-300 text-sm">Berperan dalam sejarah daerah.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALAT MUSIK TRADISIONAL -->
+    <section id="musik" class="py-24 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center mb-12">
+                Alat Musik Tradisional
+                <span class="text-emerald-400">Kalimantan Utara</span>
+            </h3>
+    
+            <div class="grid md:grid-cols-3 gap-8">
+    
+                <!-- Sape -->
+                <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg">
+                    <img src="assets/image/sape.jpg" alt="Alat Musik Sape" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold text-emerald-400">Sape</h4>
+                        <p class="text-slate-300 text-sm mt-1">
+                            Alat musik petik khas suku Dayak yang menghasilkan
+                            alunan lembut dan menenangkan.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Gong -->
+                <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg">
+                    <img src="assets/image/gong.jpg" alt="Alat Musik Gong" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold text-emerald-400">Gong</h4>
+                        <p class="text-slate-300 text-sm mt-1">
+                            Digunakan dalam upacara adat, tarian tradisional,
+                            dan ritual masyarakat Kalimantan Utara.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Ketawak -->
+                <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg">
+                    <img src="assets/image/ketawak.jpg" alt="Alat Musik Ketawak" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold text-emerald-400">Ketawak</h4>
+                        <p class="text-slate-300 text-sm mt-1">
+                            Alat musik pukul berbahan logam yang biasanya
+                            mengiringi tarian dan acara adat.
+                        </p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- MAKANAN DAERAH -->
+    <section id="makanan" class="py-24 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center mb-12">
+                Makanan Khas <span class="text-emerald-400">Kalimantan Utara</span>
+            </h3>
+    
+            <div class="grid md:grid-cols-3 gap-8">
+    
+                <!-- Lawa -->
+                <div class="bg-slate-900 rounded-2xl overflow-hidden shadow-lg">
+                    <img src="assets/image/lawa.jpg" alt="Lawa Khas Kalimantan Utara" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold text-emerald-400">Lawa</h4>
+                        <p class="text-slate-400 text-sm mt-1">
+                            Makanan tradisional dari ikan mentah atau rumput laut yang
+                            dicampur kelapa sangrai dan bumbu khas.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Tudai -->
+                <div class="bg-slate-900 rounded-2xl overflow-hidden shadow-lg">
+                    <img src="assets/image/tudai.jpg" alt="Tudai" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold text-emerald-400">Tudai</h4>
+                        <p class="text-slate-400 text-sm mt-1">
+                            Kerang laut khas Kalimantan Utara yang biasanya dibakar
+                            atau direbus dan disajikan dengan sambal.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Sate Ikan Pari -->
+                <div class="bg-slate-900 rounded-2xl overflow-hidden shadow-lg">
+                    <img src="assets/image/sate-ikan-pari.jpg" alt="Sate Ikan Pari" class="w-full h-56 object-cover">
+                    <div class="p-4">
+                        <h4 class="text-lg font-semibold text-emerald-400">
+                            Sate Ikan Pari
+                        </h4>
+                        <p class="text-slate-400 text-sm mt-1">
+                            Olahan ikan pari dengan bumbu rempah khas pesisir
+                            Kalimantan Utara.
+                        </p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+
+<!-- ================= WISATA ================= -->
+<section id="wisata" class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center mb-12">Wisata Unggulan</h3>
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <!-- Pantai Tanah Kuning -->
+            <div class="bg-slate-900 rounded-2xl overflow-hidden shadow-lg">
+                <img src="assets/image/pantai-kuning.jpg" alt="Pantai Tanah Kuning"
+                    class="w-full h-56 object-cover" />
+                <div class="p-4 text-center">
+                    <h4 class="text-lg font-semibold text-emerald-400">
+                        Pantai Tanah Kuning
+                    </h4>
+                    <p class="text-slate-400 text-sm mt-1">
+                        Kabupaten Bulungan
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sungai Kayan -->
+            <div class="bg-slate-900 rounded-2xl overflow-hidden shadow-lg">
+                <img src="assets/image/kayan.jpg" alt="Sungai Kayan"
+                    class="w-full h-56 object-cover" />
+                <div class="p-4 text-center">
+                    <h4 class="text-lg font-semibold text-emerald-400">
+                        Sungai Kayan
+                    </h4>
+                    <p class="text-slate-400 text-sm mt-1">
+                        Tanjung Selor – Bulungan
+                    </p>
+                </div>
+            </div>
+
+            <!-- Hutan Tropis Kalimantan -->
+            <div class="bg-slate-900 rounded-2xl overflow-hidden shadow-lg">
+                <img src="assets/image/hutan.jpg" alt="Hutan Tropis Kalimantan"
+                    class="w-full h-56 object-cover" />
+                <div class="p-4 text-center">
+                    <h4 class="text-lg font-semibold text-emerald-400">
+                        Hutan Tropis Kalimantan
+                    </h4>
+                    <p class="text-slate-400 text-sm mt-1">
+                        Kawasan Pedalaman Kalimantan Utara
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+    <footer class="py-8 bg-slate-950 text-center text-slate-400">
+        © 2026 | Website Profil Kalimantan Utara
+    </footer>
+
+    <script>
+        const btn = document.getElementById("mobile-menu-btn");
+        const menu = document.getElementById("mobile-menu");
+        btn.addEventListener("click", () => menu.classList.toggle("hidden"));
+    </script>
+
+</body>
+
+</html>
